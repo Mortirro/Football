@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@bitbucket.org:SE7ENSKY/verstat-template.git"
+    "url": "https://github.com/Mortirro/football.git"
   },
   "version": "0.0.1",
   "dependencies": {

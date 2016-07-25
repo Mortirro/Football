@@ -1,8 +1,11 @@
-+e("h1").calendar__name Календарь событий 
++e("h1").name Календарь событий 
 +e.list
-	+e.item
-		+e("h2").item-name
-		+e.item-data
-		+e("h3").news-name
-		+e("h3").news-description
+	each item in calendar
+		+e.item
+			+e.name= item.name
+			+e.data= item.data
+			+e.news-name= item.news-name
+			+e.news-description= item.news-description
+			
+		
 +e("button").news-see__all.close(href="#" type="button" data-dismiss="modal" aria-hidden="true") Смотреть все события

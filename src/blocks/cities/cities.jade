@@ -1,7 +1,8 @@
 +e("h1").name Подай заявку на участие в своем городе
-	//- +e.list
-	//- 	+e.list-item
-	//- 		+e.item-container
-	//- 			+e.("h2").item-name
-	//- 			+e.item-tags
-	//- 				+e("a").item-tag(href="#")
+	+e.list
+	each item in cities
+		+e.item
+			+e.item-container
+				+e.name= item.name
+				+e.tags= item.tags
+					+e("a").item-tag(href="#")= item.tag

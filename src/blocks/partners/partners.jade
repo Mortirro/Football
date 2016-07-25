@@ -1,3 +1,5 @@
 +e("h1").name Наши партнеры
 	+e.list
-		+e("a").item(href="#" alt="bigmir.net")
+		each item in part
+			+e.item
+				+e("a").name(href="#" alt="bigmir.net")

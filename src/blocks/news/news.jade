@@ -4,9 +4,10 @@
 		.nav__arrow-right(src="#" alt="")
 		.navs__dots(src="#" alt="")
 			+e.list
-				+e.item
-					+e("h2").item-name
-					+e.item-data
-					+e("h3").header
-					+e("h3").header-description
+				each item in news
+					+e.item
+						+e("h2").item-name= item.name
+						+e.item-data= iten.data
+						+e("h3").header= item.header
+						+e("h3").header-description= item.header-description
 +e("button").see-all.close(href="#" type="button" data-dismiss="modal" aria-hidden="true") Смотреть все события
