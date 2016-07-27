@@ -2,7 +2,8 @@
 +e("h1").name Будь всегда в курсе
 +e("h3").name-description Мы постоянно расширяемся и ищем партеров в новых городах
 .forms
-	+e.("label").user-email E-mail
-		+e("input")(type="" name="" value="")
+	+e("label").user-email
+		span E-mail
+		input(type="email" name="" value="")
 		+e("button").deal-button(type="button" data-dismiss="modal" aria-hidden="true") БЫТЬ В КУРСЕ
 		+e("h6").info Ваши данные никогда не будут переданы 3-м лицам.

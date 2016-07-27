@@ -1,8 +1,10 @@
-+e("h1").name Подай заявку на участие в своем городе
-	+e.list
-	each item in cities
++e("h2").title Подай заявку на участие в своем городе
++e.list
+	each item in news
 		+e.item
 			+e.item-container
-				+e.name= item.name
-				+e.tags= item.tags
-					+e("a").item-tag(href="#")= item.tag
+				+e("h2").main= item.title
+				+e.item-tags
+					if item.subitems
+						each subitem in item.subitems
+							+e("a").subsidiary(href=subitem.url)= subitem.title
