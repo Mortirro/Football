@@ -1,10 +1,9 @@
 +e.bg
 +e.sponsors
-	+e.sponsors-names Наши генеральные спонсоры
-	+e.sponsors-list
+	+e.sponsors-names
+		+e.sponsors-list
 		if sponsors
 			each item in sponsors
-			if item.general
 				+e("a").sponsors-item(href=item.url)
 					+e("img").sponsors-image(src=item.url alt=item.title)
 +e.content

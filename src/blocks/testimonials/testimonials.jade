@@ -4,8 +4,7 @@
 		+e.item
 			+e.name= item.name
 			+e.company= item.company
-			+e.image= item.image
+			+e("img").image(src=item.image alt="")
 			+e.date= item.date
-			+e.socialLink= item.socialLink
+			+e("link").socialLink= item.socialLink
 			+e.text= item.text
-			
